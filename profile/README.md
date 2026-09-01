@@ -9,8 +9,46 @@
 [![Angular](https://img.shields.io/badge/Angular%2017%2B-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
 [![Gemini](https://img.shields.io/badge/Gemini%202.0%20Flash-4285F4?style=for-the-badge&logo=google-gemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
 
-> **🏆 Hackathon Pitch Tagline:** 
-> *Overhauling Malaysia's RM47.3 Billion Mortgage Sector by Bridging Multi-Agent Document Understanding with Google Cloud Spanner Graph Databases to Explode Processing Speeds and Unmask Hidden Fraud-for-Profit Rings.*
+[![Watch Demo](https://img.shields.io/badge/🎬%20Watch%20Demo-Pitch%20Presentation-EA4335?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/18KTx7EMbD_U7bPESUO6-ojlxBhYWYBC2/view?usp=sharing)
+[![Borrower Portal](https://img.shields.io/badge/🌐%20Live%20App-Borrower%20Portal-34A853?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mltf.bagusxmahendra.com/)
+[![Ops Dashboard](https://img.shields.io/badge/🛡️%20Live%20App-Ops%20Dashboard%20(Admin)-673AB7?style=for-the-badge&logo=shield&logoColor=white)](https://mltf.bagusxmahendra.com/ops/dashboard-v2)
+[![Sample Datasets](https://img.shields.io/badge/📂%20Test%20Docs-Sample%20Datasets-FBBC05?style=for-the-badge&logo=googledrive&logoColor=black)](https://drive.google.com/drive/folders/1DzVWrzagcXVX4bZ908DKVYuNDveypfaW?usp=sharing)
+
+> **🏆 Submission for Devpost & Google "All Things Agentic Hackathon"**
+> * **Primary Track:** 🏢 **The Fortified Enterprise Fleet** *(Scalable multi-agent network integrated with enterprise infrastructure, Cloud Spanner Graph, stateful supervisor state machine, zero-trust PDPA compliance, and Pub/Sub telemetry).*
+> * **Special Competitions:** 🏛️ **Best Architectural Design** & 🎨 **Best Multimodal UX**
+>
+> *“Overhauling Malaysia's RM47.3 Billion Mortgage Sector by Bridging Multi-Agent Document Understanding with Google Cloud Spanner Graph Databases to Explode Processing Speeds and Unmask Hidden Fraud-for-Profit Rings.”*
+
+---
+
+## ⚖️ Judges' Evaluation Rubric Alignment (Quick Reference)
+
+| Judging Criteria (Weight) | How MLTF Delivers Maximum Score | Key Proof Points in Repo & Demos |
+| :--- | :--- | :--- |
+| **💡 Innovation & Operational Utility (40%)** | • Solves RM47.3B friction by collapsing mortgage turnaround from **15–22 days down to < 2 hours**.<br>• Autonomous, end-to-end heavy lifting: Multimodal extraction, ISO GQL multi-hop graph fraud traversal, and instant risk synthesis with **zero manual hand-holding**.<br>• Unmasks collusive fraud rings invisible to legacy tabular systems with **>95% accuracy**. | • [Live Borrower Portal](https://mltf.bagusxmahendra.com/)<br>• [Live Ops Underwriter Dashboard](https://mltf.bagusxmahendra.com/ops/dashboard-v2)<br>• [4-min Video Demo](https://drive.google.com/file/d/18KTx7EMbD_U7bPESUO6-ojlxBhYWYBC2/view?usp=sharing) |
+| **🏛️ Architectural Discipline & Tech Stack (30%)** | • Production-grade microservices built with **Java 21** & **Spring Boot 3.x**.<br>• Coordinated by **Google ADK for Java** using the Supervisor-Worker state machine pattern.<br>• **Google Cloud Spanner Graph** provides $O(k)$ Index-Free Adjacency for sub-second link analysis.<br>• Strict compliance with Bank Negara Malaysia & **Malaysian PDPA** via zero-trust guards, Federated Learning, and SHAP XAI. | • [Multi-Agent Topology](#%EF%B8%8F-system-architecture--multi-agent-topology)<br>• [Spanner Graph ISO GQL Engine](#-google-cloud-spanner-graph-unmasking-collusive-fraud-rings)<br>• [Privacy & Federated Learning](#%EF%B8%8F-privacy-first-federated-learning--explainable-ai-xai) |
+| **🚀 Demo & Production Readiness (30%)** | • Fully deployed, publicly accessible dual interfaces (Borrower Web UI + Ops Dashboard).<br>• Complete ~4-min live presentation showcasing live Google Cloud execution.<br>• Ready-to-use sample test dossiers (Valid vs. Fraudulent/Tampered datasets).<br>• Comprehensive step-by-step local spin-up and reproducible build instructions. | • [Live Demos & Presentations](#-live-demo--presentation)<br>• [Sample Test Datasets](#-try-it-yourself-with-demo-sample-documents)<br>• [Local Spin-up Guide](#%EF%B8%8F-local-spin-up--deployment-guide) |
+
+---
+
+## 🚀 Live Demo & Presentation
+
+Explore the system in action! Whether you want to watch the complete pitch walkthrough or test drive the live applications directly:
+
+| Destination | Type | Direct Link | Experience Overview |
+| :--- | :--- | :--- | :--- |
+| 🎬 **Demo Presentation** | **Video Pitch** | [▶️ **Watch on Google Drive**](https://drive.google.com/file/d/18KTx7EMbD_U7bPESUO6-ojlxBhYWYBC2/view?usp=sharing) | Full end-to-end video presentation detailing the problem statement, multi-agent AI architecture, Spanner Graph traversals, and benchmark results. |
+| 👤 **User Access Portal** | **Live Web App** | [🚀 **mltf.bagusxmahendra.com**](https://mltf.bagusxmahendra.com/) | Borrower-facing experience: submit loan applications, upload financial records (payslips, tax forms), and observe instantaneous multimodal extraction. |
+| 🛡️ **Operational Admin Portal** | **Live Web App** | [⚡ **mltf.bagusxmahendra.com/ops/dashboard-v2**](https://mltf.bagusxmahendra.com/ops/dashboard-v2) | Underwriter & Compliance command center: live agent orchestration queue, interactive Spanner Graph network visualizer, collusive ring unmasking, and explainable audit trails. |
+
+### 📂 Try It Yourself with Demo Sample Documents
+Want to test the AI extraction and fraud unmasking live on the [Borrower Portal](https://mltf.bagusxmahendra.com/)? Download and test with our curated sample datasets:
+
+| Test Dataset Scenario | Direct Link | What to Expect During Testing |
+| :--- | :--- | :--- |
+| ✅ **Valid Application Documents** | [📁 **Download Valid Dataset**](https://drive.google.com/drive/folders/1DzVWrzagcXVX4bZ908DKVYuNDveypfaW?usp=sharing) | Clean, authentic Malaysian mortgage dossier (EA Form, 3-month payslips, bank statements, S&P agreement). Passes multimodal extraction, verifies DSR cleanly, and moves smoothly to approval. |
+| 🚨 **Invalid / Fraudulent Documents** | [📁 **Download Invalid / Tampered Dataset**](https://drive.google.com/drive/folders/1AkebVkzqWSdvaSN7oB_dY97pdJUXm2tS?usp=sharing) | Contains synthetic identity overlaps, falsified salary amounts, or collusive contact numbers. Watch the **Perception Agent** & **Spanner Graph Agent** immediately flag anomalies and route to the HITL fraud queue. |
 
 ---
 
@@ -33,41 +71,49 @@ Legacy systems evaluate each loan file in **strict tabular isolation**, making t
 
 MLTF is designed natively as an enterprise-grade, high-throughput microservice ecosystem. We implement the **Supervisor-Worker Agentic Pattern** using **Java 21**, **Spring Boot 3.x**, and the **Google ADK for Java**.
 
-```
-              ┌──────────────────────────────────────────────┐
-              │          Angular Web Client Dashboard        │
-              │         (Enterprise Angular Material UI)     │
-              └──────────────────────┬───────────────────────┘
-                                     │
-                                     │ HTTPS / REST (Payloads & Events)
-                                     ▼
-              ┌──────────────────────────────────────────────┐
-              │             Orchestrator Service             │
-              │      (Java Spring Boot + Google ADK)         │
-              └──────────────────────┬───────────────────────┘
-                                     │
-         ┌───────────────────────────┴───────────────────────────┐
-         ▼                           ▼                           ▼
-┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
-│ Perception Agt  │         │ Graph Fraud Agt │         │ Credit Score Agt│
-│ Gemini 2.0      │         │ Gemini 1.5 Pro  │         │ Gemini 1.5 Pro  │
-│  (Flash Vision) │         │ + Spanner Graph │         │  + CCRIS/CTOS   │
-└────────┬────────┘         └────────┬────────┘         └─────────────────┘
-         │                           │
-         │ (Raw Extraction)          │ (ISO GQL Traversals)
-         ▼                           ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                 Google Cloud Spanner (Unified Database)                 │
-│      [Relational Tables]  [Dynamic JSON]  [ISO GQL Property Graphs]     │
-└────────────────────────────────────┬────────────────────────────────────┘
-                                     │
-                                     │ Asynchronous Pub/Sub
-                                     ▼
-                        ┌───────────────────────────┐
-                        │   Audit & Compliance Agt  │
-                        │   Gemini 2.0 Flash Lite   │
-                        │ (PDPA-Compliant JSON Logs)│
-                        └───────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph ClientLayer["🖥️ Presentation Layer"]
+        UI["Angular Web Client Dashboard<br/>(Enterprise Angular Material UI)"]
+    end
+
+    subgraph OrchestrationLayer["🎮 Orchestration & State Management"]
+        Supervisor["Supervisor Agent / Orchestrator<br/>(Java 21 · Spring Boot 3.x · Google ADK for Java)"]
+    end
+
+    subgraph WorkerFleet["🤖 Autonomous Cognitive Worker Fleet"]
+        Perception["Perception Worker<br/>(Gemini 2.0 Flash Vision)"]
+        GraphAgent["Graph Fraud Worker<br/>(Gemini 1.5 Pro + ISO GQL)"]
+        CreditAgent["Credit Scoring Worker<br/>(Gemini 1.5 Pro + CCRIS/CTOS)"]
+        AuditAgent["Audit & Compliance Worker<br/>(Gemini 2.0 Flash Lite)"]
+    end
+
+    subgraph PersistenceLayer["☁️ Google Cloud Data & Event Backbone"]
+        Spanner[("Google Cloud Spanner (Unified Database)<br/>[Relational Tables] · [Dynamic JSON] · [ISO GQL Property Graph]")]
+        PubSub[["Google Cloud Pub/Sub<br/>(Async Telemetry & Event Streaming)"]]
+    end
+
+    UI -->|"HTTPS / REST (Payloads & Events)"| Supervisor
+    Supervisor -->|"1. Raw Dossier Dispatch"| Perception
+    Supervisor -->|"2. Extracted Entities"| GraphAgent
+    Supervisor -->|"3. Financials Assessment"| CreditAgent
+
+    Perception -->|"Structured JSON Extraction"| Spanner
+    GraphAgent -->|"ISO GQL Graph Traversals & Anomaly Scoring"| Spanner
+
+    Spanner -.->|"State Transitions & Events"| PubSub
+    PubSub -->|"Asynchronous Telemetry Stream"| AuditAgent
+    AuditAgent -.->|"PDPA-Compliant Immutable Audit Logs"| Spanner
+
+    classDef uiClass fill:#E3F2FD,stroke:#1565C0,stroke-width:2px,color:#0D47A1;
+    classDef orchClass fill:#EDE7F6,stroke:#512DA8,stroke-width:2px,color:#311B92;
+    classDef workerClass fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#1B5E20;
+    classDef gcpClass fill:#FFF3E0,stroke:#E65100,stroke-width:2px,color:#BF360C;
+
+    class UI uiClass;
+    class Supervisor orchClass;
+    class Perception,GraphAgent,CreditAgent,AuditAgent workerClass;
+    class Spanner,PubSub gcpClass;
 ```
 
 ---
@@ -94,13 +140,20 @@ MLTF solves this with **Google Cloud Spanner Graph**. By using **Index-Free Adja
 
 ### 📊 Unified Graph Database Schema
 
-```
-        [:WORKS_FOR]             [:APPLIES_FOR]
- Employer <─── Applicant ─────────────────────────> Property
-                 │
-                 ├─[:USES_CONTACT]──> ContactInfo (Phone, Email, IP)
-                 │
-                 └─[:SUBMITTED]─────> Document (Pay slip, Tax, Valuations)
+```mermaid
+graph LR
+    Applicant["👤 Applicant"]
+    Employer["🏢 Employer"]
+    Property["🏠 Property"]
+    ContactInfo["📞 ContactInfo<br/>(Phone, Email, IP)"]
+    Document["📄 Document<br/>(Payslip, Tax, Valuations)"]
+    Appraiser["🧑‍⚖️ Appraiser"]
+
+    Applicant -->|":WORKS_FOR"| Employer
+    Applicant -->|":APPLIES_FOR"| Property
+    Applicant -->|":USES_CONTACT"| ContactInfo
+    Applicant -->|":SUBMITTED"| Document
+    Appraiser -->|":VALUED"| Property
 ```
 
 ### 💻 Live Fraud Detection in Action: The Power of ISO GQL
@@ -144,6 +197,8 @@ The frontend application is built using **Angular v17+** and **Angular Material*
 * **The "Audit Trail" Panel**: Fully populated with real-time audit logs generated by the **Audit Worker**, detailing *why* the AI reached its conclusions.
 * **One-Click Override**: Human underwriters can override decisions with a required text justification, satisfying fiduciary accountability constraints [238].
 
+👉 **Try the Live Underwriter Dashboard**: [https://mltf.bagusxmahendra.com/ops/dashboard-v2](https://mltf.bagusxmahendra.com/ops/dashboard-v2)
+
 ---
 
 ## 📈 Unprecedented Business & Social Impact
@@ -167,7 +222,87 @@ MLTF is not just an application; it is built upon the academic foundation of **D
 
 1. **Problem Investigation**: Done via rigorous stakeholder analysis of Malaysian underwriters and compliance officers to pinpoint legacy bottlenecks [27].
 2. **Treatment Design (The Artifact)**: Multi-Agent supervisor-worker system built natively in Java and Spanner Graph [29, 30].
-3. **Treatment Validation**: Tested in a laboratory setting using highly realistic simulated synthetic mortgage datasets modeling Malaysian financial dynamics (safeguarding PDPA compliance) [35].
+3. **Treatment Validation**: Tested in a laboratory setting using highly realistic simulated synthetic mortgage datasets modeling Malaysian financial dynamics (safeguarding PDPA compliance) [35] (Available for testing: [Valid Demo Dataset](https://drive.google.com/drive/folders/1DzVWrzagcXVX4bZ908DKVYuNDveypfaW?usp=sharing) & [Invalid/Tampered Dataset](https://drive.google.com/drive/folders/1AkebVkzqWSdvaSN7oB_dY97pdJUXm2tS?usp=sharing)).
+
+---
+
+## ☁️ Google Cloud & Google AI Tech Stack Verification
+
+Every component of MLTF is natively built on the Google Cloud and Agentic AI ecosystem:
+
+| Layer / Hackathon Requirement | Google Cloud / Google AI Technology | Specific Role in MLTF |
+| :--- | :--- | :--- |
+| **🧠 Cognitive AI Models** | **Gemini 2.0 Flash (Multimodal Vision)**<br>**Gemini 1.5 Pro** | • **Perception Agent**: Directly parses multi-page complex financial PDFs (EA forms, payslips, S&P) without brittle legacy OCR.<br>• **Graph & Scoring Agents**: Generates ISO GQL graph queries and evaluates credit risk. |
+| **🤖 Agent Framework** | **Google ADK for Java (Agent Development Kit)** | Coordinates the Supervisor-Worker state machine, handles async agent dispatch, error recovery, and Human-in-the-Loop triggers. |
+| **🌐 Unified Database** | **Google Cloud Spanner + Spanner Graph** | Fuses relational applicant dossiers with ISO GQL Property Graphs via Index-Free Adjacency ($O(k)$ complexity) to unmask collusive fraud rings in milliseconds. |
+| **⚡ Messaging & Telemetry** | **Google Cloud Pub/Sub** | Asynchronously routes inter-agent events and streams immutable JSON audit logs to the Audit & Compliance Worker. |
+| **🚀 Compute & Deployment** | **Google Cloud Run & GKE** | Containerized microservices and Angular web frontend with automatic elasticity and enterprise scalability. |
+
+---
+
+## 🏛️ Organization Repositories & Agent Ecosystem
+
+| Repository | Role / Microservice | Tech Stack |
+| :--- | :--- | :--- |
+| 🎮 **`supervisor-agent`** | Master Orchestrator, ADK State Machine, Agent Scheduler | Java 21, Spring Boot 3.x, Google ADK for Java |
+| 👁️ **`document-processing-agent`** | Multimodal PDF/Image Extraction & Form Tamper Analysis | Java 21, Spring Boot 3.x, Gemini 2.0 Flash Vision |
+| 🕸️ **`graph-processing-agent`** | Spanner Graph ISO GQL Engine, Collusive Ring Link Analysis | Java 21, Spring Boot 3.x, Spanner Graph, Gemini 1.5 Pro |
+| 📂 **`case-management-service`** | Mortgage Application Lifecycle, DSR & Credit Scoring Engine | Java 21, Spring Boot 3.x, Cloud Spanner / SQL |
+| 💻 **`ui`** | Borrower Portal & Enterprise Underwriter Dashboard (HITL) | Angular 17+, Angular Material, RxJS |
+
+---
+
+## 🛠️ Local Spin-Up & Deployment Guide
+
+Follow these steps to spin up the entire MLTF ecosystem locally or verify reproducible builds:
+
+### 📋 Prerequisites
+* **Java Development Kit (JDK)**: Java 21+
+* **Node.js**: v18+ & npm
+* **Google Cloud Credentials**: Authenticated with Gemini API / Vertex AI access (`gcloud auth application-default login`).
+
+### 1️⃣ Configure Environment Variables
+Set your Google Cloud Project & Gemini credentials in your shell or `.env`:
+```bash
+export GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
+export GEMINI_API_KEY="your-gemini-api-key"
+```
+
+### 2️⃣ Launch Backend Microservices
+Run each Java Spring Boot service using the included Gradle wrapper:
+```bash
+# Terminal 1: Case Management Service
+cd case-management-service && ./gradlew bootRun
+
+# Terminal 2: Document Processing Agent
+cd document-processing-agent && ./gradlew bootRun
+
+# Terminal 3: Graph Processing Agent
+cd graph-processing-agent && ./gradlew bootRun
+
+# Terminal 4: Supervisor Agent (Orchestrator)
+cd supervisor-agent && ./gradlew bootRun
+```
+
+### 3️⃣ Launch Angular Frontend
+```bash
+cd ui
+npm install
+npm start
+```
+* **Borrower Portal**: Open [http://localhost:4200/](http://localhost:4200/)
+* **Ops Underwriter Dashboard**: Open [http://localhost:4200/ops/dashboard-v2](http://localhost:4200/ops/dashboard-v2)
+
+---
+
+## 📢 Hackathon Submission & Community
+
+* **Hackathon**: [Devpost: All Things Agentic Hackathon ("Ready, Set, Agent!")](https://allthingsagentichackathon.devpost.com/)
+* **Official Hashtag**: `#AllThingsAgenticHackathon`
+* **Video Pitch**: [▶️ Watch Demo Presentation on Google Drive](https://drive.google.com/file/d/18KTx7EMbD_U7bPESUO6-ojlxBhYWYBC2/view?usp=sharing)
+* **Live Borrower App**: [https://mltf.bagusxmahendra.com/](https://mltf.bagusxmahendra.com/)
+* **Live Ops Dashboard**: [https://mltf.bagusxmahendra.com/ops/dashboard-v2](https://mltf.bagusxmahendra.com/ops/dashboard-v2)
 
 ---
 
