@@ -41,6 +41,7 @@ Explore the system in action! Whether you want to watch the complete pitch walkt
 | 🎬 **Demo Presentation** | **Video Pitch** | [▶️ **Watch on Google Drive**](https://drive.google.com/file/d/18KTx7EMbD_U7bPESUO6-ojlxBhYWYBC2/view?usp=sharing) | Full end-to-end video presentation detailing the problem statement, multi-agent AI architecture, Spanner Graph traversals, and benchmark results. |
 | 👤 **User Access Portal** | **Live Web App** | [🚀 **mltf.bagusxmahendra.com**](https://mltf.bagusxmahendra.com/) | Borrower-facing experience: submit loan applications, upload financial records (payslips, tax forms), and observe instantaneous multimodal extraction. |
 | 🛡️ **Operational Admin Portal** | **Live Web App** | [⚡ **mltf.bagusxmahendra.com/ops/dashboard-v2**](https://mltf.bagusxmahendra.com/ops/dashboard-v2) | Underwriter & Compliance command center: live agent orchestration queue, interactive Spanner Graph network visualizer, collusive ring unmasking, and explainable audit trails. |
+| 💻 **Source Code (GitHub Org)** | **Codebase** | [📂 **github.com/mltf-reborn**](https://github.com/mltf-reborn) | Complete open-source microservices ecosystem across Java 21 Spring Boot agents and Angular frontend. |
 
 ### 📂 Try It Yourself with Demo Sample Documents
 Want to test the AI extraction and fraud unmasking live on the [Borrower Portal](https://mltf.bagusxmahendra.com/)? Download and test with our curated sample datasets:
@@ -244,11 +245,11 @@ Every component of MLTF is natively built on the Google Cloud and Agentic AI eco
 
 | Repository | Role / Microservice | Tech Stack |
 | :--- | :--- | :--- |
-| 🎮 **`supervisor-agent`** | Master Orchestrator, ADK State Machine, Agent Scheduler | Java 21, Spring Boot 3.x, Google ADK for Java |
-| 👁️ **`document-processing-agent`** | Multimodal PDF/Image Extraction & Form Tamper Analysis | Java 21, Spring Boot 3.x, Gemini 2.0 Flash Vision |
-| 🕸️ **`graph-processing-agent`** | Spanner Graph ISO GQL Engine, Collusive Ring Link Analysis | Java 21, Spring Boot 3.x, Spanner Graph, Gemini 1.5 Pro |
-| 📂 **`case-management-service`** | Mortgage Application Lifecycle, DSR & Credit Scoring Engine | Java 21, Spring Boot 3.x, Cloud Spanner / SQL |
-| 💻 **`ui`** | Borrower Portal & Enterprise Underwriter Dashboard (HITL) | Angular 17+, Angular Material, RxJS |
+| 🎮 [**`mltf-reborn/supervisor-agent`**](https://github.com/mltf-reborn/supervisor-agent) | Master Orchestrator, ADK State Machine, Agent Scheduler | Java 21, Spring Boot 3.x, Google ADK for Java |
+| 👁️ [**`mltf-reborn/document-processing-agent`**](https://github.com/mltf-reborn/document-processing-agent) | Multimodal PDF/Image Extraction & Form Tamper Analysis | Java 21, Spring Boot 3.x, Gemini 2.0 Flash Vision |
+| 🕸️ [**`mltf-reborn/graph-processing-agent`**](https://github.com/mltf-reborn/graph-processing-agent) | Spanner Graph ISO GQL Engine, Collusive Ring Link Analysis | Java 21, Spring Boot 3.x, Spanner Graph, Gemini 1.5 Pro |
+| 📂 [**`mltf-reborn/case-management-service`**](https://github.com/mltf-reborn/case-management-service) | Mortgage Application Lifecycle, DSR & Credit Scoring Engine | Java 21, Spring Boot 3.x, Cloud Spanner / SQL |
+| 💻 [**`mltf-reborn/ui`**](https://github.com/mltf-reborn/ui) | Borrower Portal & Enterprise Underwriter Dashboard (HITL) | Angular 17+, Angular Material, RxJS |
 
 ---
 
@@ -261,7 +262,16 @@ Follow these steps to spin up the entire MLTF ecosystem locally or verify reprod
 * **Node.js**: v18+ & npm
 * **Google Cloud Credentials**: Authenticated with Gemini API / Vertex AI access (`gcloud auth application-default login`).
 
-### 1️⃣ Configure Environment Variables
+### 1️⃣ Clone the Repositories
+```bash
+git clone https://github.com/mltf-reborn/supervisor-agent.git
+git clone https://github.com/mltf-reborn/document-processing-agent.git
+git clone https://github.com/mltf-reborn/graph-processing-agent.git
+git clone https://github.com/mltf-reborn/case-management-service.git
+git clone https://github.com/mltf-reborn/ui.git
+```
+
+### 2️⃣ Configure Environment Variables
 Set your Google Cloud Project & Gemini credentials in your shell or `.env`:
 ```bash
 export GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
@@ -269,7 +279,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
 export GEMINI_API_KEY="your-gemini-api-key"
 ```
 
-### 2️⃣ Launch Backend Microservices
+### 3️⃣ Launch Backend Microservices
 Run each Java Spring Boot service using the included Gradle wrapper:
 ```bash
 # Terminal 1: Case Management Service
@@ -285,7 +295,7 @@ cd graph-processing-agent && ./gradlew bootRun
 cd supervisor-agent && ./gradlew bootRun
 ```
 
-### 3️⃣ Launch Angular Frontend
+### 4️⃣ Launch Angular Frontend
 ```bash
 cd ui
 npm install
